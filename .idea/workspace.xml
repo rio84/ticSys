@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6c6a815-6d8d-4d30-8c3a-ee2b53b8cf07" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/ticSys.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/a/0.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/p/admin.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mock/create.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/a/g.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/p/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/a/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/p/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/a/login.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mock/login.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/a/qrcode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/p/register.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/a/register.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mock/register.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/a/zepto.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ticSys.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -73,10 +55,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/a/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="35" selection-start="232" selection-end="232" vertical-scroll-proportion="0.21933623" vertical-offset="0" max-vertical-offset="693">
+            <state line="8" column="35" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="589">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="693">
               <folding />
             </state>
           </provider>
@@ -136,6 +127,7 @@
         <option value="$PROJECT_DIR$/a/0.css" />
         <option value="$PROJECT_DIR$/p/index.html" />
         <option value="$PROJECT_DIR$/a/index.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -354,7 +346,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/a/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="35" selection-start="232" selection-end="232" vertical-scroll-proportion="0.21933623" vertical-offset="0" max-vertical-offset="693">
+        <state line="8" column="35" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="589">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="693">
           <folding />
         </state>
       </provider>
