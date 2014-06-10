@@ -6,7 +6,7 @@ var regform=document.getElementById('regform');
         if(checkform(f)){
             $.post('../mock/register.json',$(regform).serialize(),function(r){
                 if(r.code==0){
-                    alert('注册成功，请牢记用户名与密码。')
+                    alert('申请已发送！请牢记用户名与密码，等待管理员审核。')
                     location.href='login.html';
                 }else{
                     alert(r.errMsg);
