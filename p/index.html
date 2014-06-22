@@ -3,12 +3,14 @@
 <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8;"/>
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
-    <title>登陆</title>
+    <title>出票</title>
     <script src="../a/zepto.js"></script>
     <link rel="stylesheet" type="text/css" href="../a/0.css" />
 </head>
 <body>
-
+<div>
+    <a href="admin.html">管理</a>
+</div>
 <div id="result" style="display: none;">
     <h3 class="errtip">出票成功！</h3>
    <p>验票码： <input readonly="readonly" onclick="this.select()" id="validCode" />
@@ -18,6 +20,15 @@
 
     </div>
     </div>
+<!---
++data.price+",'"
+        +data.comment+"',"
+        +data.headCount+",'"
+        +data.tradeNo+"','"
+        +data.buyer+"','"
+        +data.checkCode+"',"
+        +data.expire+")";
+-->
 <form id="form">
     <p>
         <label>
@@ -25,11 +36,36 @@
         </label>
         <input name="tradeNo" placeholder="支付宝转账交易号"/>
     </p>
+
     <p>
         <label>
-            预约时间：
+            人数：
         </label>
-        <input name="date" type="date" />
+        <input name="headCount" type="number" placeholder="" value="1"/>
+    </p>
+    <p>
+        <label>
+            价格：
+        </label>
+        <input name="price" placeholder="总价"/>
+    </p>
+    <p>
+        <label>
+            买家：
+        </label>
+        <input name="buyer" placeholder="账号、姓名、昵称、电话号码"/>
+    </p>
+    <p>
+        <label>
+            过期日期：
+        </label>
+        <input name="expire" type="date" placeholder="格式:2014-1-1"/>
+    </p>
+    <p>
+        <label>
+            备注：
+        </label>
+        <textarea empty="true" maxlength="140" name="comment" placeholder="最多140字" ></textarea>
     </p>
     <p>
         <input type="submit" value="确  定"/>

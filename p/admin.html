@@ -8,13 +8,14 @@
     <link rel="stylesheet" type="text/css" href="../a/0.css" />
 </head>
 <body>
+<div style="display: none;">
 <h3>对账信息</h3>
 <table>
     <tr>
         <th></th>
-        <th>申请时间</th>
-        <th>附言</th>
-        <th>操作</th>
+        <th>总收入</th>
+        <th>总票数</th>
+        <th>已验标数</th>
     </tr>
     <tr>
         <td>xinyy</td>
@@ -26,24 +27,64 @@
         </td>
     </tr>
 </table>
+
+</div>
+
+<div>
+    <h3>我出的票</h3>
+    <table id="myTickets">
+        <thead>
+            <tr>
+                <th>出票时间</th>
+                <th>交易号</th>
+                <th>人数</th>
+                <th>票价</th>
+                <th>买家</th>
+                <th>过期日期</th>
+                <th title="有效,已验,过期,无效">状态</th>
+                <th>备注</th>
+
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="1">总计:</th>
+                <th colspan="7">
+                    票数：<b id="tCount">0</b>;&nbsp;&nbsp;
+                    金额：<b id="tPrice">0</b>;&nbsp;&nbsp;
+                    人数：<b id="tHeadCount">0</b>&nbsp;&nbsp;
+
+
+                </th>
+            </tr>
+        </tfoot>
+        <!--
+        <tr>
+            <td>2014/5/12 12:34:12</td>
+            <td>437474747</td>
+            <td>2</td>
+            <td>200</td>
+            <td>budyy</td>
+            <td>2014-9-3</td>
+            <td>有效</td>
+            <td>测试备注</td>
+        </tr>-->
+    </table>
+</div>
+
 <h3>成员管理</h3>
-<div id="msg">有新的成员加入：
-<table>
+<div style="display: none;">有新的成员加入：
+<table id="newMembers">
     <tr>
         <th>用户名</th>
         <th>申请时间</th>
         <th>附言</th>
         <th>操作</th>
     </tr>
-    <tr>
-        <td>xinyy</td>
-        <td>2014/5/12 12:34</td>
-        <td>无</td>
-        <td>
-            <button>通过</button>
-            <button>驳回</button>
-        </td>
-    </tr>
+
 </table>
 </div>
 <h4>您当前的下属：</h4>
