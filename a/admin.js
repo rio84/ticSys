@@ -1,5 +1,17 @@
 var
 getSubuser=function(){
+    $.get(checkApi('/api/user/subticket'),{
+        //userId:window.userId,
+        status:0
+    },function(r){
+        if(r.code==0){
+            console.log(r.data);
+            //var tbl=document.getElementById('newMembers');
+            renderMembers(r.data);
+        }
+    });
+}
+getNewSubuser=function(){
     $.get(checkApi('/api/user/subuser'),{
         //userId:window.userId,
         status:0
@@ -10,7 +22,8 @@ getSubuser=function(){
             renderNewMembers(r.data);
         }
     });
-},updateUser=function(data,cb){
+}
+    ,updateUser=function(data,cb){
     $.post(checkApi('/api/user/updateuser'),data,function(r){
         if(r.code==0){
             console.log(r.data);
@@ -126,7 +139,45 @@ renderNewMembers=function(list){
         tr.setAttribute('data-id', n.userId);
 
     }
-}
+},
+    renderMembers=function(list){
+        /*
+        * <th>用户名</th>
+         <th>出票数</th>
+         <th>已验票数</th>
+         <th>最近一次出票时间</th>
+         <td>操作</td>
+
+         <th>用户名</th>
+         <th>申请时间</th>
+         <th>附言</th>
+         <th>操作</th>
+        * */
+        var tbl=document.getElementById('subUsers'),
+            tbd=tbl.tBodies[0],
+            fields='nick,tcount,vcount,lastTime'.split(',');
+        if(list.length){
+            tbl.parentNode.style.display='block';
+        }
+
+        for(var i= 0,n;n=list[i];i++){
+          //  n=ticketDataAdapt(n);
+            //tcount++;
+         //   tprice+= n.price;
+         //   theadcount+= n.headCount;
+            n.lastTime= n.lastTime?formatTS(n.lastTime*1000):'无';
+            var tr=tbd.insertRow(tbd.rows.length),td;
+            for(var j= 0,m;m=fields[j];j++){
+                td=tr.insertCell(tr.cells.length);
+                td.innerHTML=n[m];
+
+            }
+            td=tr.insertCell(tr.cells.length);
+            td.innerHTML='<button>查看</button>';
+            tr.setAttribute('data-id', n.userId);
+
+        }
+    }
 
 function accept(el,uid){
     updateUser({
@@ -150,6 +201,7 @@ function reject(el,uid){
 
 
 !function main(){
+    getNewSubuser();
     getTickets();
     getSubuser();
 }();
